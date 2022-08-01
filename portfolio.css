@@ -82,9 +82,64 @@ body {
     max-width: 1920px;
 }
 
-/* largeur minimun -> donc peut aller plus loins */
-/* ici on fait référence aux écran de grande dimension */
-/* logique tjr partir de 0 pour aller vers++ -> se faire l'image en tete */
+
+
+
+
+@media (max-width:768px){
+
+    header{
+        width: 100%;
+        height: 15vh;
+        position: absolute;
+        background-color: #66aefc;
+    }
+    
+    header .logo{
+        display: none;
+    }
+
+    
+    header .top_menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+    
+    /* espace entre les li */
+    header .top_menu li + li{
+        margin-left: 100px;
+    }
+    
+    .top_menu li{
+        margin-top: 2%;
+        font-size: 1.2em;
+        /* Épaisseur du texte */
+        font-weight: 150;
+        font-family: 'Rubik', sans-serif;
+    
+    }
+    
+    header a{
+        color: #ebeff3;
+        font-family: 'Rubik', sans-serif;
+    
+    }
+
+
+}
+
+
+
+@media (max-width:425px){
+    
+
+
+}
+
+
+
+
 
 @media (max-width: 1920px){
     
@@ -136,9 +191,8 @@ body {
     width: 102%;
     /* deplacement de l'element vertialecement/horizontalement par rapport a son parent */
     transform: translate(0px,-30%);
+    /* border: 1px solid black; */
 }  
-
-
 
 
 .transition img{
@@ -146,6 +200,7 @@ body {
     filter: drop-shadow(0px 10px 5px #acc4e8);
     
 }
+
 
 .section1 {
     /* dimension de la section 1 (page d'acceuil) */
@@ -177,6 +232,7 @@ body {
     animation: moved 1s infinite alternate;
 }
 
+
 @keyframes moved {
     from {
         margin: 17% 6%;
@@ -186,6 +242,7 @@ body {
     }
 }
 
+/* animation aussi sur les titre de rubrique quand le curseurs pointe sur le titre */
 .titre_bv{
     width: 5%;
     height: 1vh;
@@ -193,18 +250,18 @@ body {
     position: absolute;
     margin: 21% 6.4%;
     animation: movedtitle 1s infinite alternate;
-}
-/* animation aussi sur les titre de rubrique quand le curseurs pointe sur le titre */
+}   
+
 @keyframes movedtitle {
     from {
         width: 5%;
-    }
+    }    
     to {
         margin: 21% 10.4%;
         width: 15%;
-    }
-}
-    
+    }    
+}  
+
 /*
 
 Logique 
@@ -222,6 +279,52 @@ h2,
 
 responsive header : couleur text blanc , arriere plan couleur bleu minute 25
 */
+
+
+
+@media(max-width:768px){
+
+    .section1{
+        background-image: none;
+    }
+
+    .section1 h1{
+        
+        color:#31489F;
+        font-size: 2em;
+        font-family: 'Rubik', sans-serif;
+        position: absolute;
+        top:20%;
+        animation: moved 1s infinite alternate;
+    }    
+
+    .titre_bv{
+        width: 5%;
+        height: 1vh;
+        background-color: #66aefc;
+        position: absolute;
+        margin: 37% 6.4%;
+        animation: movedtitle 1s infinite alternate;
+    }    
+
+
+    @keyframes movedtitle {
+        from {
+            width: 5%;
+        }    
+        to {
+            margin: 37% 10.4%;
+            width: 15%;
+        }    
+    }    
+}    
+    
+    
+
+
+
+
+
 
 .section2 {
     
