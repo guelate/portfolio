@@ -1,0 +1,1006 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Rubik&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    /* pas de point dans les liste -> à gauche */
+    list-style: none;
+    /* pas de soulignement dans les liens */
+    text-decoration: none;
+    font-family:"poppins";
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    /* position par rapport à l'element parent(encête->avant) ou le bloc qui l'encadre(ici body) */
+    /* les positions final sont ensuite données par les propriétés left,top ect.. */
+    /* de plus les dimention relatif a l'element parents du block courant ne sont plus pris en compte (widht/height) voir:test.html/portfolioo.css dans brouillon*/
+    /* logique: en 1ère etape place l'element sur son element parent. 2ème a partir de la donne lui sa propre position par le propriété left margin ect */
+    position: absolute;
+}
+
+header .logo{
+    width: 5%;
+    height: 80%;
+    position: absolute;
+    left:10%; top:5%;
+}
+
+header .top_menu ul{
+    display: flex;
+    flex-direction: row;
+    /* caractérise l'alignement des elements dans leurs block courant */
+    justify-content: center;
+    
+}
+
+/* espace entre les li */
+header .top_menu li + li{
+    margin-left: 100px;
+}
+
+
+
+.top_menu li{
+    margin-top: 2%;
+    font-size: 1.2em;
+    /* Épaisseur du texte */
+    font-weight: 150;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+header a{
+    color: #66aefc;
+    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Edu VIC WA NT Beginner', cursive; */
+
+}
+
+header a:hover .ligne{
+    width: 1%;
+    height: 1vh;
+    background-color: #66aefc;
+    visibility: visible;
+    animation: movedligne 0.8s infinite alternate;
+
+}
+
+@keyframes movedligne {
+    from {
+        width:1%
+    }
+    to {
+        width:50%;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 1920px;
+}
+
+/* largeur minimun -> donc peut aller plus loins */
+/* ici on fait référence aux écran de grande dimension */
+/* logique tjr partir de 0 pour aller vers++ -> se faire l'image en tete */
+
+@media (max-width: 1920px){
+    
+    .section1 {
+        /* dimension de la section 1 (page d'acceuil) */
+        /* width: 100%; */
+        /* vh -> relatif à la dimention de la fenêtre */
+        /* height: 100vh; */
+        /* insertion d'image en arrière plan */
+        background-image: url(../picture/1.png);
+
+        /* répétition de l'image insérée */
+        /* background-repeat: no-repeat; */
+
+        /* position initiale de l'element inséré */
+        background-position: top right;
+        /* border: 1px solid red; */
+    }
+    
+    .container .project1 {
+        
+        width: 50%;
+        height: 70%;
+        margin: 0 auto;
+        /* background-color: black; */
+        
+    }
+    
+    /* faire les autres projets ici  */
+    
+    
+    .gauche {
+        margin:-16% 21%;
+        /* border: 1px solid black; */
+    }
+    /* fait en pixel pour l'adapter au 1 -> partir de 196px 300px; pour comprendre */
+    .droit {
+        margin: 196px 1165px;
+        
+    }
+    
+}
+
+
+/* TRANSITION ENTRE LA SECTION 1 & 2 */
+
+.transition{
+    position: absolute;
+    width: 102%;
+    /* deplacement de l'element vertialecement/horizontalement par rapport a son parent */
+    transform: translate(0px,-30%);
+}  
+
+
+
+
+.transition img{
+    width: 100%;
+    filter: drop-shadow(0px 10px 5px #acc4e8);
+    
+}
+
+.section1 {
+    /* dimension de la section 1 (page d'acceuil) */
+    width: 100%;
+    /* vh -> relatif à la dimention de la fenêtre */
+    height: 100vh;
+    /* répétition de l'image insérée */
+    background-repeat: no-repeat;
+}
+    
+    
+.section1 .container{
+    width: 100%;
+    /* ici height relatif -> au cadre courant -> section1 */
+    height: 100%;
+    /* disposition des elements en lignes ou bloc (par défaut en ligne) -> row*/
+    display: flex;
+    /* definition de la direction de la disposition */
+    flex-direction: column;
+}
+    
+.section1 h1{
+        
+    color:#31489F;
+    font-size: 3.5em;
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    margin: 17% 6%;
+    animation: moved 1s infinite alternate;
+}
+
+@keyframes moved {
+    from {
+        margin: 17% 6%;
+    }
+    to {
+        margin: 17% 10%;
+    }
+}
+
+.titre_bv{
+    width: 5%;
+    height: 1vh;
+    background-color: #66aefc;
+    position: absolute;
+    margin: 21% 6.4%;
+    animation: movedtitle 1s infinite alternate;
+}
+/* animation aussi sur les titre de rubrique quand le curseurs pointe sur le titre */
+@keyframes movedtitle {
+    from {
+        width: 5%;
+    }
+    to {
+        margin: 21% 10.4%;
+        width: 15%;
+    }
+}
+    
+/*
+
+Logique 
+
+si on veut attribuer la meme police a plusieurs titre
+on peut faire 
+h1,
+h2,
+..{
+    font-family: ...;
+}
+*/
+
+/* 
+
+responsive header : couleur text blanc , arriere plan couleur bleu minute 25
+*/
+
+.section2 {
+    
+    width: 100%;
+    height: 100vh;
+}
+
+.section2{
+    background-color: #232323;
+    /* padding: 50% 0%; */
+}
+
+
+.section2 img.no_displaynone:nth-child(1){
+    position: absolute;
+    margin: 34% 80%;
+    width: 3%;
+    animation: moveicone1 3s alternate infinite;
+}
+
+@keyframes moveicone1 {
+    from {
+        margin: 34% 80%;
+    }
+    to {
+        margin: 34% 40%;
+    }
+}
+
+
+.section2 img.no_displaynone:nth-child(2){
+    position: absolute;
+    margin: 38.5% 41%;
+    width: 3%;
+    animation : moveicone2 3s alternate infinite;  
+}
+
+@keyframes moveicone2 {
+    from {
+        margin: 38.5% 41%;
+    }
+    to {
+        margin: 38.5% 80%;
+    }
+}
+
+.section2 .content_left{
+    width: 20%;
+    height: 57vh;
+    border: 1px solid rgb(255, 248, 248);
+    filter: drop-shadow(0 0 0.75rem #66aefc);
+    border-radius: 10%;
+    position: absolute;
+    margin: 13% 10%;
+    
+}
+
+.section2 .content_left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.section2 .content_right{
+    width: 50%;
+    height: 40vh;
+    position: absolute;
+    margin: 18% 40%;
+    filter: drop-shadow(0 0 0.20rem #c6c6c6);
+    
+}
+.section2 .container .titre{
+    width: 13%;
+    height: 5vh;
+    position: absolute;
+    margin: 10% 60%;
+    
+    
+}
+
+.section2 .titre h2{
+    
+    font-family:'Rubik', sans-serif;
+    color:#f6f3f3;
+    font-size: 1.7em;
+    font-weight: 150;
+}
+
+.section2 .titre_ligne{
+    width: 78%;
+    height: 2vh;
+    background-color: #66aefc;
+    /* site css clipy faire son design et copier/coller le code */
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 79%, 48% 100%, 25% 78%, 0 100%, 0% 43%, 0 0);
+}
+
+.section2 .content_right p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6em;
+    font-weight: 350;
+    line-height: 150%;
+    word-break: break-word;
+    color: #f2f8fe;
+}
+
+/* pas besoin de le mettre dans @media car il est relatif au cadre courant */
+/* pour la section 3 reprendre la video partie 2
+rajouter bouton -> voir le code sources avec l'émojie github
+changer l'icone du site
+BOUTON POUR VOIR LE CODE 
+
+*/
+
+.section3 {
+    
+    width: 100%;
+    /* 300 pck on scroll 3 fois la dimension de l'écran
+    mais apres ajustement on laisse a 250*/
+    height: 250vh;
+    background-color: #232323;
+}
+
+.section3 .titre h2{
+    font-family:'Rubik', sans-serif;
+    color:#f6f3f3;
+    font-size: 1.7em;
+    font-weight: 150;
+    position: absolute;
+    margin:1% 45%;
+    
+}
+
+.section3 .titre_ligne{
+    width: 10%;
+    height: 2vh;
+    background-color: #66aefc;
+    /* site css clipy faire son design et copier/coller le code */
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 79%, 48% 100%, 25% 78%, 0 100%, 0% 43%, 0 0);
+    position:absolute;
+    margin:3.5% 45%;
+}
+
+.section3 .project1 .container{
+    
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    /* border: 1px solid rgb(37, 255, 251); */
+}
+
+.section3 .content_left1{
+    width: 42%;
+    height: 60vh;
+    border: 1px solid rgb(227, 254, 255);
+    filter: drop-shadow(0 0 0.75rem #e7e7e2);
+    position: absolute;
+    margin: 10% 53%;
+    
+}
+
+.section3 .container .left1{
+    position: absolute;
+    margin: 21.5% 49%;
+    width: 3%;
+    height: 6vh;
+    /* border: 1px solid rgb(240, 240, 244); */
+}
+
+/* .section3 .left{
+    position: absolute;
+    margin: auto;
+    color:white;
+} */
+
+.section3 .container .right1{
+    position: absolute;
+    margin: 21.5% 96%;
+    width: 3%;
+    height: 6vh;
+    /* border: 1px solid rgb(186, 186, 195); */
+}
+
+.section3 .content_right1{
+    position: absolute;
+    width: 48%;
+    height: 60vh;
+    /* border: 1px solid rgba(241, 241, 241, 0.685); */
+    margin: 10% 1%;
+    color: white;
+}
+
+.section3 .content_right1 h1{
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    margin: 0% 7%;
+    filter: drop-shadow(0 0 0.15rem #c6c6c6);
+}
+
+.section3 .content_right1 .point1{
+    position: absolute;
+    width: 3%;
+    height: 3vh;
+    background-color: #31489F;
+    left:1%; top:2.5%;
+    border-radius: 48%;
+    border: 3px solid white;
+    
+}
+
+.section3 .content_right1 .surlignement_project1{
+    position: absolute;
+    width: 15%;
+    height: 1vh;
+    background-color: #66aefc;
+    margin:1% 1%;
+}
+
+.section3 .content_right1 p{
+    position:absolute;
+    margin: 4% 1%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    font-weight: 150;
+    line-height: 40px;
+}
+
+
+/* recuperation de toute les images du projet 1 -> type d'affichage nul */
+.section3 .project1 .content_left1 img{
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.section3 .project2 .content_left2 img{
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.section3 .project2 .container{
+    /* position: absolute; */
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    /* border: 1px solid rgb(37, 255, 251); */
+}
+
+.section3 .container .left2{
+    position: absolute;
+    margin: 15.5% auto;
+    width: 3%;
+    height: 6vh;
+    /* border: 1px solid rgb(240, 240, 244); */
+}
+
+.section3 .container .right2{
+    position: absolute;
+    margin: 15.5% 49%;
+    width: 3%;
+    height: 6vh;
+    /* border: 1px solid rgb(186, 186, 195); */
+}
+
+.section3 .project2 .content_left2{
+
+    width: 42%;
+    height: 60vh;
+    border: 1px solid rgb(18, 17, 17);
+    filter: drop-shadow(0 0 0.75rem #e7e7e2);
+    position: absolute;
+    margin: 4% 5%;
+
+}
+
+
+.section3 .project2 .content_right2{
+    width: 40%;
+    height: 60vh;
+    /* border: 1px solid rgba(254, 255, 253, 0.685); */
+    position: absolute;
+    margin: 4% 55%;
+    color: white;
+}
+
+
+.section3 .content_right2 h1{
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    margin: 0% 7%;
+    filter: drop-shadow(0 0 0.15rem #c6c6c6);
+
+}
+
+.section3 .content_right2 .point2{
+    position: absolute;
+    width: 3%;
+    height: 3vh;
+    background-color: #31489F;
+    left:1%; top:2.5%;
+    border-radius: 48%;
+    border: 3px solid white;
+    
+}
+
+.section3 .content_right2 .surlignement_project2{
+    position: absolute;
+    width: 15%;
+    height: 1vh;
+    background-color: #66aefc;
+    margin:1% 1%;
+}
+
+.section3 .content_right2 p{
+    position:absolute;
+    margin: 4% 1%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    font-weight: 150;
+    line-height: 40px;
+}
+
+
+.section3 .project3 .container{
+    width: 100%;
+    height: 83vh;
+    display: flex;
+}
+
+
+
+
+
+.section3 .content_left3{
+    width: 42%;
+    height: 60vh;
+    border: 1px solid rgb(16, 16, 16);
+    filter: drop-shadow(0 0 0.75rem #e7e7e2);
+    position: absolute;
+    margin: 5% 55%;
+
+}
+
+
+.section3 .content_right3{
+    width: 50%;
+    height: 60vh;
+    /* border: 1px solid rgba(254, 254, 254, 0.685); */
+    position: absolute;
+    margin: 5% 2%;
+    color:white;
+}
+
+
+.section3 .content_right3 h1{
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    margin: 0% 7%;
+    filter: drop-shadow(0 0 0.15rem #c6c6c6);
+    /* font-weight: 130; */
+}
+
+.section3 .content_right3 .point3{
+    position: absolute;
+    width: 3%;
+    height: 3vh;
+    background-color: #31489F;
+    left:1%; top:2.5%;
+    border-radius: 48%;
+    border: 3px solid white;
+    
+}
+
+.section3 .content_right3 .surlignement_project3{
+    position: absolute;
+    width: 15%;
+    height: 1vh;
+    background-color: #66aefc;
+    margin:1% 1%;
+}
+
+.section3 .content_right3 p{
+    position:absolute;
+    margin: 4% 1%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    font-weight: 150;
+    line-height: 40px;
+}
+
+
+
+img.no_displaynone{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.section3  img.no_displaynone:nth-child(2){
+    position: absolute;
+    margin: 37% 37%;
+    animation: move3icone1 3s alternate infinite;  
+}
+
+@keyframes move3icone1 {
+    from {
+        margin: 37% 37%;
+    }
+    to {
+        margin: 37% 3%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(3){
+    position: absolute;
+    margin: 27% 37%;
+    animation: move3icone2 3s alternate infinite;  
+}
+
+@keyframes move3icone2 {
+    from {
+        margin: 27% 37%;
+    }
+    to {
+        margin: 27% 3%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(4){
+    position: absolute;
+    margin: 32% 3%;
+    animation: move3icone3 3s alternate infinite;  
+}
+
+@keyframes move3icone3 {
+    from {
+        margin: 32% 3%
+    }
+    to {
+        margin: 32% 37%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(5){
+    position: absolute;
+    margin: 63% 56%;
+    animation: move3icone4 3s alternate infinite;  
+}
+
+@keyframes move3icone4 {
+    from {
+        margin: 63% 56%;
+    }
+    to {
+        margin: 63% 85%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(6){
+    position: absolute;
+    margin: 57% 85%;
+    animation: move3icone5 3s alternate infinite;  
+}
+
+@keyframes move3icone5 {
+    from {
+        margin: 57% 85%;
+    }
+    to {
+        margin: 57% 56%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(7){
+    position: absolute;
+    margin: 97% 5%;
+    animation: move3icone6 3s alternate infinite;  
+}
+
+@keyframes move3icone6 {
+    from {
+        margin: 97% 5%;
+    }
+    to {
+        margin: 97% 50%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(8){
+    position: absolute;
+    margin: 103% 45%;
+    animation: move3icone7 3s alternate infinite;  
+}
+
+@keyframes move3icone7 {
+    from {
+        margin: 103% 45%;
+    }
+    to {
+        margin: 103% 5%;
+    }
+}
+
+
+
+
+/* html.active = l'élément html qui a la class active*/
+/* html .active = tout les elements etant dans le regrouper par l'élément html sous la class active */
+/* .section3 .project1 .content_left1 img */
+
+.section3 .project1 .content_left1 img.active{
+
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 0.75rem #151512);
+    display:block;
+    animation: changed 0.8s;
+}
+
+@keyframes changed {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.section3 .project2 .content_left2 img.active{
+
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 0.75rem #151512);
+    display:block;
+    animation: changed 0.8s;
+}
+
+@keyframes changed {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section3 .project3 .content_left3 img.active{
+
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 0.75rem #151512);
+    display:block;
+    animation: changed 0.8s;
+}
+
+@keyframes changed {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*
+
+Tester la fonctionnalité du formulaire
+et la navigation générale entre les différentes pages 
+pour la finalités
+
+*/
+.section4 {
+
+    width: 100%;
+    height: 100vh;
+    background-color: #232323;
+}
+
+.section4 .titre h2{
+
+    position: absolute;
+    font-family:'Rubik', sans-serif;
+    color:#f6f3f3;
+    font-size: 1.7em;
+    font-weight: 150;
+    margin: 1% 44%;
+    width: 12%;
+}
+
+.section4 .titre_ligne{
+    width: 11%;
+    height: 2vh;
+    background-color: #66aefc;
+    /* site css clipy faire son design et copier/coller le code */
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 79%, 48% 100%, 25% 78%, 0 100%, 0% 43%, 0 0);
+    position: absolute;
+    margin: 3.5% 44%;
+}
+
+.section4 .container{
+    width: 50%;
+    height: 75vh;
+    position: absolute;
+    /* border: 1px solid rgb(244, 236, 236); */
+    /* background-color: #ebebeb; */
+    margin: 7% 24%;
+    /* border-radius: 30px; */
+    /* filter: drop-shadow(0 0 0.75rem #e7e7e2); */
+
+}
+
+.section4 form{
+
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 80%;
+    margin: 2% 12%;
+    /* border: 1px solid white; */
+
+}
+
+.section4 input{
+    
+    width: 70%;
+    height: 4vh;
+    margin: 0% 13% 5%;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(233, 247, 247);
+    font-family: 'Rubik', sans-serif;
+    filter: drop-shadow(0 0 0.25rem #e7e7e2);
+
+}
+
+/* 
+
+changer le curseur quand on pointe sur la partie ou il y a mon email
+rajouter le menu latéral 
+
+*/
+
+/* .icone4{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    
+} */
+
+.section4 img.no_displaynone:nth-child(1){
+    position: absolute;
+    margin: 7% 93%;
+    animation: moveicone10 3s alternate infinite;  
+}
+
+@keyframes moveicone10 {
+    from {
+        margin: 7% 93%;
+    }
+    to {
+        margin: 35% 93%;
+    }
+}
+
+.section4 img.no_displaynone:nth-child(4){
+    position: absolute;
+    margin: 35% 78%;
+    animation: moveicone11 3s alternate infinite;
+}
+
+@keyframes moveicone11 {
+    from {
+        margin: 35% 78%;
+
+    }
+    to {
+        margin: 7% 78%;
+
+    }   
+}
+
+.section4 img.no_displaynone:nth-child(2){
+    position: absolute;
+    margin: 7% 18%;
+    animation: moveicone12 3s alternate infinite;
+}
+
+@keyframes moveicone12 {
+    from {
+        margin: 7% 18%;
+    }
+    to {
+        margin: 35% 18%;
+    }
+}
+
+.section4 img.no_displaynone:nth-child(3){
+    position: absolute;
+    margin: 35% 3%;
+    animation: moveicone13 3S alternate infinite;
+}
+
+@keyframes moveicone13 {
+    from {
+        margin: 35% 3%;
+    }
+    to {
+        margin: 7% 3%;
+    }
+}
+
+.section4 button{
+    width: 15%;
+    height: 5vh;
+    margin: 2% 41%;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    background: transparent;
+    border: 1px solid #fff7f7;
+    color:white;
+    outline: none;
+    opacity: 1; 
+
+}
+
+.section4 button:hover{
+    border: 4px solid #fff7f7;
+    background-color: #66aefc;
+    font-size:1em;
+    font-weight: 150;
+    
+}
+
+.section4 textarea {
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Rubik', sans-serif;
+    filter: drop-shadow(0 0 0.25rem #e7e7e2);
+
+}
+
+.iconegithub{
+    
+    position: absolute;
+    margin: 41% 43%;
+}
+
+.iconelinkedin{
+    position: absolute;
+    margin: 41% 48.5%;
+    
+}
+
+.num{
+
+    position: absolute;
+    margin:41.3% 54%;
+    width: 13%;
+}
+
+.num .show{
+  width: 70%;
+  height: 3vh;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  left:12%; top:4%;
+  opacity:0; 
+
+  text-align: center;
+}
+
+.num:hover .show{
+    opacity:1;
+} 
+
+
