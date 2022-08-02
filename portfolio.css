@@ -846,6 +846,8 @@ BOUTON POUR VOIR LE CODE
     display: none;
 }
 
+
+
 .section3 .project2 .content_left2 img{
     
     width: 100%;
@@ -1102,7 +1104,7 @@ img.no_displaynone{
 .section3  img.no_displaynone:nth-child(8){
     position: absolute;
     margin: 103% 45%;
-    animation: move3icone7 3s alternate infinite;  
+    animation: move3icone7 3s alternate infinite;
 }
 
 @keyframes move3icone7 {
@@ -1112,6 +1114,8 @@ img.no_displaynone{
     to {
         margin: 103% 5%;
     }
+
+
 }
 
 
@@ -1338,10 +1342,128 @@ img.no_displaynone{
     }
 }
 
+.section3 .project2 .content_left2 img{
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.section3 .project2 .container{
+    width: 100%;
+    height: 83vh;
+    display: flex;
+}
+
+.section3 .container .left2{
+    position: absolute;
+    margin: 15.5% auto;
+    width: 3%;
+    height: 6vh;
+}
+
+.section3 .container .right2{
+    position: absolute;
+    margin: 15.5% 49%;
+    width: 3%;
+    height: 6vh;
+}
+
+.section3 .project2 .content_left2{
+
+    width: 45%;
+    height: 50vh;
+    border: 1px solid rgb(18, 17, 17);
+    filter: drop-shadow(0 0 0.75rem #e7e7e2);
+    position: absolute;
+    margin: 7% 5%;
+
+}
+
+
+.section3 .project2 .content_right2{
+    width: 40%;
+    height: 50vh;
+    position: absolute;
+    margin: 7% 56%;
+    color: white;
+}
+
+
+.section3 .content_right2 h1{
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    margin: 0% 8%;
+    filter: drop-shadow(0 0 0.15rem #c6c6c6);
+
+}
+
+.section3 .content_right2 .point2{
+    position: absolute;
+    width: 2.5%;
+    height: 2vh;
+    background-color: #31489F;
+    left:1%; top:2.5%;
+    border-radius: 48%;
+    border: 3px solid white;
+    
+}
+
+.section3 .content_right2 .surlignement_project2{
+    position: absolute;
+    width: 15%;
+    height: 0.5vh;
+    background-color: #66aefc;
+    margin:1% 1%;
+}
+
+.section3 .content_right2 p{
+    position:absolute;
+    margin: 4% 1%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    font-weight: 150;
+    line-height: 30px;
+}
+
+.section3  img.no_displaynone:nth-child(6){
+    position: absolute;
+    margin: 93% 85%;
+    animation: move3icone5 3s alternate infinite;  
+}
+
+@keyframes move3icone5 {
+    from {
+        margin: 93% 85%;
+    }
+    to {
+        margin: 93% 56%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(5){
+    position: absolute;
+    margin: 105% 56%;
+    animation: move3icone4 3s alternate infinite;  
+}
+
+@keyframes move3icone4 {
+    from {
+        margin: 105% 56%;
+    }
+    to {
+        margin: 105% 85%;
+    }
+}
 
 
     
 }
+
+
+
 
 @media(max-width:426){
 
@@ -1412,20 +1534,6 @@ img.no_displaynone{
     filter: drop-shadow(0 0 0.25rem #e7e7e2);
 
 }
-
-/* 
-
-changer le curseur quand on pointe sur la partie ou il y a mon email
-rajouter le menu latéral 
-
-*/
-
-/* .icone4{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    
-} */
 
 .section4 img.no_displaynone:nth-child(1){
     position: absolute;
@@ -1555,9 +1663,381 @@ rajouter le menu latéral
 
 
 @media(max-width:769px){
+
+
+.section4 .titre h2{
+
+    position: absolute;
+    font-family:'Rubik', sans-serif;
+    color:#f6f3f3;
+    font-size: 1em;
+    font-weight: 150;
+    margin: 4% 44%;
+    width: 15%;
+}
+
+.section4 .titre_ligne{
+    width: 13%;
+    height: 1.5vh;
+    background-color: #66aefc;
+    /* site css clipy faire son design et copier/coller le code */
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 79%, 48% 100%, 25% 78%, 0 100%, 0% 43%, 0 0);
+    position: absolute;
+    margin: 6.5% 44%;
+}
+
+.section4 .container{
+    width: 50%;
+    height: 75vh;
+    position: absolute;
+    margin: 13% 24%;
+}
+
+.section4 form{
+
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 80%;
+    margin: 2% 12%;
+
+}
+
+.section4 input{
+    
+    width: 70%;
+    height: 4vh;
+    margin: 0% 13% 5%;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(233, 247, 247);
+    font-family: 'Rubik', sans-serif;
+    filter: drop-shadow(0 0 0.25rem #e7e7e2);
+
+}
+
+.section4 textarea {
+
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Rubik', sans-serif;
+    filter: drop-shadow(0 0 0.25rem #e7e7e2);
+}
+
+.section4 button{
+    width: 23%;
+    height: 5vh;
+    margin: 2% 41%;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    background: transparent;
+    border: 1px solid #fff7f7;
+    color:white;
+    outline: none;
+    opacity: 1; 
+
+}
+
+.section4 button:hover{
+    border: 4px solid #fff7f7;
+    background-color: #66aefc;
+    font-size:1em;
+    font-weight: 150;
     
 }
 
-@media(max-width:426){
+
+.iconegithub{
+    
+    position: absolute;
+    margin: 71% 36%;
+    font-size: 1rem;
+   
+}
+
+.iconelinkedin{
+    position: absolute;
+    margin: 71.5% 47.5%;
+    font-size: 0.5rem;
+    
+}
+
+.num{
+
+    position: absolute;
+    margin:71.5% 61%;
+    width: 13%;
+}
+
+.num .show{
+  width: 120%;
+  height: 3vh;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  left:30%; top:4%;
+  opacity:0;
+
+  text-align: center;
+}
+
+.num:hover .show{
+    opacity:1;
+}
+
+.section4 img.no_displaynone:nth-child(1){
+    position: absolute;
+    margin: 25% 93%;
+    animation: moveicone10 3s alternate infinite;
+}
+
+@keyframes moveicone10 {
+    from {
+        margin: 25% 93%;
+    }
+    to {
+        margin: 60% 93%;
+    }
+}
+
+.section4 img.no_displaynone:nth-child(4){
+    position: absolute;
+    margin: 60% 78%;
+    animation: moveicone11 3s alternate infinite;
+}
+
+@keyframes moveicone11 {
+    from {
+        margin: 60% 78%;
+
+    }
+    to {
+        margin: 25% 78%;
+
+    }   
+}
+
+.section4 img.no_displaynone:nth-child(2){
+    position: absolute;
+    margin: 60% 18%;
+    animation: moveicone12 3s alternate infinite;
+}
+
+@keyframes moveicone12 {
+    from {
+        margin: 60% 18%;
+    }
+    to {
+        margin: 25% 18%;
+    }
+}
+
+.section4 img.no_displaynone:nth-child(3){
+
+    position: absolute;
+    margin: 25% 3%;
+    animation: moveicone13 3S alternate infinite;
+
+}
+
+@keyframes moveicone13 {
+    from {
+        margin: 25% 3%;
+    }
+    to {
+        margin: 60% 3%;
+    }
+}
+
+    
+}
+
+@media(max-width:426px){
+
+
+
+.section4 .titre h2{
+
+    position: absolute;
+    font-family:'Rubik', sans-serif;
+    color:#f6f3f3;
+    font-size: 1em;
+    font-weight: 150;
+    margin: 4% 42%;
+    width: 25%;
+}
+
+.section4 .titre_ligne{
+    width: 23%;
+    height: 1.5vh;
+    background-color: #66aefc;
+    /* site css clipy faire son design et copier/coller le code */
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 79%, 48% 100%, 25% 78%, 0 100%, 0% 43%, 0 0);
+    position: absolute;
+    margin: 8.5% 42%;
+}
+
+.section4 .container{
+    width: 50%;
+    height: 75vh;
+    position: absolute;
+    margin: 13% 24%;
+}
+
+.section4 form{
+
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width:280px;
+    height: 60vh;
+    margin: 20% -6%;
+
+}
+
+.section4 input{
+    
+    width: 70%;
+    height: 4vh;
+    margin: 0% 13% 5%;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(233, 247, 247);
+    font-family: 'Rubik', sans-serif;
+    filter: drop-shadow(0 0 0.25rem #e7e7e2);
+
+}
+
+.section4 textarea {
+
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Rubik', sans-serif;
+    filter: drop-shadow(0 0 0.25rem #e7e7e2);
+}
+
+.section4 button{
+    width: 25%;
+    height: 5vh;
+    margin: 6% 39%;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    background: transparent;
+    border: 1px solid #fff7f7;
+    color:white;
+    outline: none;
+    opacity: 1; 
+
+}
+
+.section4 button:hover{
+    border: 4px solid #fff7f7;
+    background-color: #66aefc;
+    font-size:1em;
+    font-weight: 150;
+    
+}
+
+
+.iconegithub{
+    
+    position: absolute;
+    margin: 125% 25%;
+    font-size: 1rem;
+   
+}
+
+.iconelinkedin{
+    position: absolute;
+    margin: 125% 47%;
+    font-size: 0.5rem;
+    
+}
+
+.num{
+
+    position: absolute;
+    margin:126% 71%;
+    width: 13%;
+}
+
+.num .show{
+  width: 120%;
+  height: 3vh;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  left:30%; top:4%;
+  opacity:0;
+
+  text-align: center;
+}
+
+.num:hover .show{
+    opacity:1;
+}
+
+.section4 img.no_displaynone:nth-child(1){
+    position: absolute;
+    margin: 40% 89%;
+    animation: moveicone10 3s alternate infinite;
+}
+
+@keyframes moveicone10 {
+    from {
+        margin: 40% 89%;
+    }
+    to {
+        margin: 82% 89%;
+    }
+}
+
+.section4 img.no_displaynone:nth-child(4){
+    position: absolute;
+    margin: 110% 85%;
+    animation: moveicone11 3s alternate infinite;
+}
+
+@keyframes moveicone11 {
+    from {
+        margin: 110% 85%;
+
+    }
+    to {
+        margin: 110% 55%;
+
+    }   
+}
+
+.section4 img.no_displaynone:nth-child(2){
+    position: absolute;
+    margin: 110% 5%;
+    animation: moveicone12 3s alternate infinite;
+}
+
+@keyframes moveicone12 {
+    from {
+        margin: 110% 5%;
+    }
+    to {
+        margin: 110% 45%;
+    }
+}
+
+.section4 img.no_displaynone:nth-child(3){
+
+    position: absolute;
+    margin: 40% 3%;
+    animation: moveicone13 3S alternate infinite;
+
+}
+
+@keyframes moveicone13 {
+    from {
+        margin: 40% 3%;
+    }
+    to {
+        margin: 82% 3%;
+    }
+}
+
     
 }
