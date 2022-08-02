@@ -727,6 +727,8 @@ BOUTON POUR VOIR LE CODE
 }
 
 
+
+
 .section3 {
     
     width: 100%;
@@ -735,6 +737,8 @@ BOUTON POUR VOIR LE CODE
     height: 250vh;
     background-color: #232323;
 }
+
+
 
 .section3 .titre h2{
     font-family:'Rubik', sans-serif;
@@ -779,28 +783,20 @@ BOUTON POUR VOIR LE CODE
     margin: 21.5% 49%;
     width: 3%;
     height: 6vh;
-    /* border: 1px solid rgb(240, 240, 244); */
 }
 
-/* .section3 .left{
-    position: absolute;
-    margin: auto;
-    color:white;
-} */
 
 .section3 .container .right1{
     position: absolute;
     margin: 21.5% 96%;
     width: 3%;
     height: 6vh;
-    /* border: 1px solid rgb(186, 186, 195); */
 }
 
 .section3 .content_right1{
     position: absolute;
     width: 48%;
     height: 60vh;
-    /* border: 1px solid rgba(241, 241, 241, 0.685); */
     margin: 10% 1%;
     color: white;
 }
@@ -859,11 +855,9 @@ BOUTON POUR VOIR LE CODE
 
 
 .section3 .project2 .container{
-    /* position: absolute; */
     width: 100%;
     height: 83vh;
     display: flex;
-    /* border: 1px solid rgb(37, 255, 251); */
 }
 
 .section3 .container .left2{
@@ -871,7 +865,6 @@ BOUTON POUR VOIR LE CODE
     margin: 15.5% auto;
     width: 3%;
     height: 6vh;
-    /* border: 1px solid rgb(240, 240, 244); */
 }
 
 .section3 .container .right2{
@@ -879,7 +872,6 @@ BOUTON POUR VOIR LE CODE
     margin: 15.5% 49%;
     width: 3%;
     height: 6vh;
-    /* border: 1px solid rgb(186, 186, 195); */
 }
 
 .section3 .project2 .content_left2{
@@ -897,7 +889,6 @@ BOUTON POUR VOIR LE CODE
 .section3 .project2 .content_right2{
     width: 40%;
     height: 60vh;
-    /* border: 1px solid rgba(254, 255, 253, 0.685); */
     position: absolute;
     margin: 4% 55%;
     color: white;
@@ -1184,13 +1175,180 @@ img.no_displaynone{
         opacity: 1;
     }
 }
-/*
 
-Tester la fonctionnalité du formulaire
-et la navigation générale entre les différentes pages 
-pour la finalités
 
-*/
+@media(max-width:769px){
+
+
+.section3 .titre h2{
+    font-family:'Rubik', sans-serif;
+    color:#f6f3f3;
+    font-size: 1.3em;
+    font-weight: 150;
+    position: absolute;
+    margin:1% 40%;
+    
+}
+
+.section3 .titre_ligne{
+    width: 15.5%;
+    height: 1.5vh;
+    background-color: #66aefc;
+    /* site css clipy faire son design et copier/coller le code */
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 79%, 48% 100%, 25% 78%, 0 100%, 0% 43%, 0 0);
+    position:absolute;
+    margin:4.3% 40%;
+}
+
+.section3 .project1 .container{
+    
+    width: 100%;
+    height: 83vh;
+    display: flex;
+}
+
+.section3 .content_left1{
+    width: 42%;
+    height: 41vh;
+    border: 1px solid rgb(227, 254, 255);
+    filter: drop-shadow(0 0 0.75rem #e7e7e2);
+    position: absolute;
+    margin: 10% 50%;
+    /* border: 1px solid red; */
+}
+
+.section3 .container .left1{
+    position: absolute;
+    margin: 21.5% 49%;
+    width: 3%;
+    height: 6vh;
+    /* border: 1px solid red; */
+}
+
+
+.section3 .container .right1{
+    position: absolute;
+    margin: 21.5% 96%;
+    width: 3%;
+    height: 6vh;
+}
+
+.section3 .content_right1{
+    position: absolute;
+    width: 45%;
+    height: 45vh;
+    margin: 10% 1%;
+    color: white;
+}
+
+.section3 .content_right1 h1{
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    margin: 0% 9%;
+    filter: drop-shadow(0 0 0.15rem #c6c6c6);
+}
+
+.section3 .content_right1 .point1{
+    position: absolute;
+    width: 2.7%;
+    height: 2vh;
+    background-color: #31489F;
+    left:1%; top:2.5%;
+    border-radius: 48%;
+    border: 3px solid white;
+    
+}
+
+.section3 .content_right1 .surlignement_project1{
+    position: absolute;
+    width: 15%;
+    height: 0.5vh;
+    background-color: #66aefc;
+    margin:2.3% 1%;
+}
+
+.section3 .content_right1 p{
+    position:absolute;
+    margin: 4% 1%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    font-weight: 150;
+    line-height: 30px;
+}
+
+
+/* recuperation de toute les images du projet 1 -> type d'affichage nul */
+.section3 .project1 .content_left1 img{
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+img.no_displaynone{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.section3  img.no_displaynone:nth-child(2){
+    position: absolute;
+    margin: 56% 37%;
+    animation: move3icone1 3s alternate infinite;  
+}
+
+@keyframes move3icone1 {
+    from {
+        margin: 56% 37%;
+    }
+    to {
+        margin: 56% 3%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(3){
+    position: absolute;
+    margin: 40% 37%;
+    animation: move3icone2 3s alternate infinite;  
+}
+
+@keyframes move3icone2 {
+    from {
+        margin: 40% 37%;
+    }
+    to {
+        margin: 40% 3%;
+    }
+}
+
+.section3  img.no_displaynone:nth-child(4){
+    position: absolute;
+    margin: 47% 3%;
+    animation: move3icone3 3s alternate infinite;  
+}
+
+@keyframes move3icone3 {
+    from {
+        margin: 47% 3%
+    }
+    to {
+        margin: 47% 37%;
+    }
+}
+
+
+
+    
+}
+
+@media(max-width:426){
+
+}
+
+
+
 .section4 {
 
     width: 100%;
@@ -1396,3 +1554,10 @@ rajouter le menu latéral
 } 
 
 
+@media(max-width:769px){
+    
+}
+
+@media(max-width:426){
+    
+}
