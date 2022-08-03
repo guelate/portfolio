@@ -131,7 +131,7 @@ body {
 
 
 
-@media (max-width:327px){
+@media (max-width:391px){
 
     header{
 
@@ -167,7 +167,7 @@ body {
     
     .top_menu li{
         margin-top: 2%;
-        font-size: 0.75em;
+        font-size: 0.55em;
         /* Épaisseur du texte */
         font-weight: 150;
         font-family: 'Rubik', sans-serif;
