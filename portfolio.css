@@ -131,7 +131,7 @@ body {
 
 
 
-@media (max-width:376px){
+@media (max-width:426px){
 
     header{
 
@@ -252,7 +252,7 @@ body {
     
 }
 
-@media(max-width:376px){
+@media(max-width:426px){
 
 }
 
@@ -322,8 +322,7 @@ body {
     height: 1vh;
     background-color: #66aefc;
     position: absolute;
-    margin: 30% 6.4%;
-    top:4%;
+    margin: 21% 6.4%;
     animation: movedtitle 1s infinite alternate;
 }   
 
@@ -332,7 +331,7 @@ body {
         width: 5%;
     }    
     to {
-        margin: 30% 10.4%;
+        margin: 21% 10.4%;
         width: 15%;
     }    
 }  
@@ -394,7 +393,7 @@ responsive header : couleur text blanc , arriere plan couleur bleu minute 25
     }    
 }  
 
-@media(max-width:376px){
+@media(max-width:426px){
 
     .section1{
         background-image: none;
@@ -635,7 +634,7 @@ BOUTON POUR VOIR LE CODE
 
 
 
-@media(max-width:376px){
+@media(max-width:426px){
 
     .section2 img.no_displaynone:nth-child(1){
         position: absolute;
@@ -1847,7 +1846,7 @@ img.no_displaynone{
     
 }
 
-@media(max-width:376px){
+@media(max-width:426px){
 
 
 
