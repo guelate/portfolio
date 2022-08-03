@@ -131,7 +131,7 @@ body {
 
 
 
-@media (max-width:426px){
+@media (max-width:326px){
 
     header{
 
@@ -252,7 +252,7 @@ body {
     
 }
 
-@media(max-width:426px){
+@media(max-width:326px){
 
 }
 
@@ -393,7 +393,7 @@ responsive header : couleur text blanc , arriere plan couleur bleu minute 25
     }    
 }  
 
-@media(max-width:426px){
+@media(max-width:326px){
 
     .section1{
         background-image: none;
@@ -634,7 +634,7 @@ BOUTON POUR VOIR LE CODE
 
 
 
-@media(max-width:426px){
+@media(max-width:326px){
 
     .section2 img.no_displaynone:nth-child(1){
         position: absolute;
@@ -1846,7 +1846,7 @@ img.no_displaynone{
     
 }
 
-@media(max-width:426px){
+@media(max-width:326px){
 
 
 
