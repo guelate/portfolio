@@ -131,7 +131,7 @@ body {
 
 
 
-@media (max-width:426px){
+@media (max-width:376px){
 
     header{
 
@@ -167,11 +167,11 @@ body {
     
     .top_menu li{
         margin-top: 2%;
-        font-size: 1.1em;
+        font-size: 0.95em;
         /* Épaisseur du texte */
         font-weight: 150;
         font-family: 'Rubik', sans-serif;
-        margin-top: 7%;
+        margin-top: 10%;
         /* border: 1px solid red; */
     
     
@@ -252,7 +252,7 @@ body {
     
 }
 
-@media(max-width:426px){
+@media(max-width:376px){
 
 }
 
@@ -298,11 +298,12 @@ body {
 .section1 h1{
         
     color:#31489F;
-    font-size: 3.5em;
+    font-size: 3em;
     font-family: 'Rubik', sans-serif;
     position: absolute;
     margin: 17% 6%;
     animation: moved 1s infinite alternate;
+    width:90%;
 }
 
 
@@ -321,7 +322,8 @@ body {
     height: 1vh;
     background-color: #66aefc;
     position: absolute;
-    margin: 21% 6.4%;
+    margin: 30% 6.4%;
+    top:4%;
     animation: movedtitle 1s infinite alternate;
 }   
 
@@ -330,7 +332,7 @@ body {
         width: 5%;
     }    
     to {
-        margin: 21% 10.4%;
+        margin: 30% 10.4%;
         width: 15%;
     }    
 }  
@@ -392,7 +394,7 @@ responsive header : couleur text blanc , arriere plan couleur bleu minute 25
     }    
 }  
 
-@media(max-width:426px){
+@media(max-width:376px){
 
     .section1{
         background-image: none;
@@ -429,12 +431,6 @@ responsive header : couleur text blanc , arriere plan couleur bleu minute 25
     }
 
 }
-    
-    
-
-
-
-
 
 
 .section2 {
@@ -639,48 +635,48 @@ BOUTON POUR VOIR LE CODE
 
 
 
-@media(max-width:426px){
+@media(max-width:376px){
 
     .section2 img.no_displaynone:nth-child(1){
         position: absolute;
-        margin: 105% 80%;
+        margin: 115% 80%;
         width: 8%;
         animation: moveicone1 3s alternate infinite;
     }
     
     @keyframes moveicone1 {
         from {
-            margin: 105% 80%;
+            margin: 115% 80%;
         }
         to {
-            margin: 105% 40%;
+            margin: 115% 40%;
         }
     }
 
     .section2 img.no_displaynone:nth-child(2){
         position: absolute;
-        margin: 88.5% 41%;
+        margin: 135.5% 41%;
         width: 8%;
         animation : moveicone2 3s alternate infinite;  
     }
     
     @keyframes moveicone2 {
         from {
-            margin: 88.5% 41%;
+            margin: 135.5% 41%;
         }
         to {
-            margin: 88.5% 80%;
+            margin: 135.5% 80%;
         }
     }
-    
+
     .section2 .content_left{
-        width: 30%;
+        width: 40%;
         height: 30vh;
         border: 1px solid rgb(255, 248, 248);
         filter: drop-shadow(0 0 0.75rem #66aefc);
         border-radius: 10%;
         position: absolute;
-        margin: 45% 1%;
+        margin: 60% 1%;
         
     }
     
@@ -691,10 +687,10 @@ BOUTON POUR VOIR LE CODE
     }
 
     .section2 .content_right{
-        width: 65%;
-        height: 30vh;
+        width: 55%;
+        height: 40vh;
         position: absolute;
-        margin: 45% 35%;
+        margin: 55% 43%;
         filter: drop-shadow(0 0 0.20rem #c6c6c6);
         text-align: justify;
         
@@ -704,7 +700,7 @@ BOUTON POUR VOIR LE CODE
         width: 30%;
         height: 5vh;
         position: absolute;
-        margin: 30% 50%;
+        margin: 30% 38%;
           
     }
     
@@ -1851,7 +1847,7 @@ img.no_displaynone{
     
 }
 
-@media(max-width:426px){
+@media(max-width:376px){
 
 
 
@@ -1862,18 +1858,18 @@ img.no_displaynone{
     color:#f6f3f3;
     font-size: 1em;
     font-weight: 150;
-    margin: 4% 42%;
-    width: 25%;
+    margin: 4% 38%;
+    width: 30%;
 }
 
 .section4 .titre_ligne{
-    width: 23%;
+    width: 26%;
     height: 1.5vh;
     background-color: #66aefc;
     /* site css clipy faire son design et copier/coller le code */
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 73% 79%, 48% 100%, 25% 78%, 0 100%, 0% 43%, 0 0);
     position: absolute;
-    margin: 8.5% 42%;
+    margin: 9% 38%;
 }
 
 .section4 .container{
@@ -1890,7 +1886,7 @@ img.no_displaynone{
     flex-direction: column;
     width:280px;
     height: 60vh;
-    margin: 20% -6%;
+    margin: 20% -21.5%;
 
 }
 
@@ -1940,14 +1936,14 @@ img.no_displaynone{
 .iconegithub{
     
     position: absolute;
-    margin: 125% 25%;
+    margin: 145% 25%;
     font-size: 1rem;
    
 }
 
 .iconelinkedin{
     position: absolute;
-    margin: 125% 47%;
+    margin: 145% 47%;
     font-size: 0.5rem;
     
 }
@@ -1955,7 +1951,7 @@ img.no_displaynone{
 .num{
 
     position: absolute;
-    margin:126% 71%;
+    margin:146% 71%;
     width: 13%;
 }
 
@@ -1992,33 +1988,33 @@ img.no_displaynone{
 
 .section4 img.no_displaynone:nth-child(4){
     position: absolute;
-    margin: 110% 85%;
+    margin: 120% 85%;
     animation: moveicone11 3s alternate infinite;
 }
 
 @keyframes moveicone11 {
     from {
-        margin: 110% 85%;
+        margin: 120% 85%;
 
     }
     to {
-        margin: 110% 55%;
+        margin: 120% 55%;
 
     }   
 }
 
 .section4 img.no_displaynone:nth-child(2){
     position: absolute;
-    margin: 110% 5%;
+    margin: 120% 5%;
     animation: moveicone12 3s alternate infinite;
 }
 
 @keyframes moveicone12 {
     from {
-        margin: 110% 5%;
+        margin: 120% 5%;
     }
     to {
-        margin: 110% 45%;
+        margin: 120% 45%;
     }
 }
 
